@@ -1,7 +1,8 @@
 /* 
 ---------COLOR CODES----------
 
-
+PRIMARY MAROON : #720e3d
+SECONDARY MAROON : #B33771
 
 */
 
@@ -52,9 +53,8 @@ body
 
 header
 {
-    background-color: #6D214F;
+    background-color: #720e3d;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-/*    padding: 10px 0;*/
 }
 
 header img
@@ -121,29 +121,110 @@ header h1
     background-color: #461533;
 } 
 
-.signup-button
+
+/* -----------------------------------------------------*/
+                /* SECTION - FRONTPAGE */
+/* -----------------------------------------------------*/
+
+
+.frontpage
+{
+    z-index: 9999;
+}
+
+.skewed
+{
+    margin-top: 35%;
+    background-color: #720e3d;
+    background-size: cover;
+    background-position: center;
+    height: 46vh;
+    width: 100%;
+    transform: skew(0deg, -5deg) translateY(-120px);
+}
+
+.heading-box
+{
+    position: absolute;
+    width: 1140px;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.frontpage h1
+{
+    color: #B33771; 
+    text-align: center;
+    font-size: 300%;
+    font-weight: 300;
+    z-index: 9999;
+}
+
+.frontpage p
+{
+    margin: 0 5% 0;
+    text-align: center;
+    color: #5c5c5c;
+    z-index: 9999;
+}
+
+.button-box
+{
+    margin-top: 4%;
+    position: absolute;
+    width: 1140px;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+     z-index: 9999;
+}
+
+.signup-button:link,
+.signup-button:visited
+{
+     z-index: 9999;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #B33771;
+    text-align: center;
+    font-size: 130%;
+    font-weight: 400;
+    padding: 10px 25px;
+    transition: all 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.signup-button:hover,
+.signup-button:active
 {
     background-color: #B33771;
+    color: #fff;
+    border: 1px solid #B33771;
+}
+
+.login-button:link,
+.login-button:visited
+{ z-index: 9999;
+    border: 1px solid #fff;
+    margin-right: 2%;
     border-radius: 50px;
-    float: right;
     text-decoration: none;
-    display: inline-block;
-    margin-top: 3.5%;
+    color: #fff;
+    text-align: center;
+    font-size: 130%;
+    font-weight: 400;
+    padding: 10px 30px;
+    transition: all 0.3s;
+    transition-timing-function: ease-in-out;
 }
 
-.signup-button li a:link,
-.signup-button li a:visited
+.login-button:hover,
+.login-button:active
 {
-    padding: 10px 25px 8px;
-    text-transform: none;
-    font-weight: 700;
-    font-size: 100%;
-}
-
-.signup-button li a:hover,
-.signup-button li a:active
-{
-    background-color: #942d6b;
-    border-bottom: 5px solid transparent;
-    border-radius: 50px;
+    background-color: #B33771;
+    border: 1px solid #B33771;
 }
