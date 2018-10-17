@@ -1,0 +1,230 @@
+/* 
+---------COLOR CODES----------
+
+PRIMARY MAROON : #720e3d
+SECONDARY MAROON : #B33771
+
+*/
+
+
+/* -----------------------------------------------------*/
+                     /* BASIC SETUP */
+/* -----------------------------------------------------*/
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+html,
+body 
+{
+    background-color: #fff;
+    color: #8d8d8d;
+    font-family: 'Roboto','Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility; 
+    text-align: justify;
+    overflow-x: hidden;
+}
+
+/* -----------------------------------------------------*/
+                /* REUSABLE COMPONENTS */
+/* -----------------------------------------------------*/
+
+.row 
+{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* -----------------------------------------------------*/
+                       /* HEADER */
+/* -----------------------------------------------------*/
+
+
+header
+{
+    background-color: #720e3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+header img
+{
+    width: auto;
+    height: 60px;
+    float: left;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 50px;
+    margin-top: 0.7%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+header h1
+{
+    color: #B33771;
+    float: left;
+    margin: 0;
+    margin-left: 2%;
+    margin-top: 0.4%;
+    font-size: 300%;
+    font-weight: 700;
+}
+
+
+/*--------------MAIN NAVI------------------*/
+
+.main-nav 
+{
+/*    margin-top: 1.8%;*/
+    float: right;
+    list-style: none; 
+}
+
+.main-nav li 
+{
+    display: inline-block;
+    margin-left: 0px;   
+    position: relative;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited 
+{
+    display: inline-block;
+    padding: 30px 10px 25px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 75%;
+    font-weight: 300;
+    transition: all 0.2s;
+    border: 1px solid transparent;
+    border-bottom: 5px solid transparent;
+   
+}
+
+.main-nav li a:hover,
+.main-nav li a:active 
+{
+    border-bottom: 5px solid #B33771;
+    background-color: #461533;
+} 
+
+
+/* -----------------------------------------------------*/
+                /* SECTION - FRONTPAGE */
+/* -----------------------------------------------------*/
+
+
+.frontpage
+{
+    z-index: 9999;
+}
+
+.skewed
+{
+    margin-top: 35%;
+    background-color: #720e3d;
+    background-size: cover;
+    background-position: center;
+    height: 46vh;
+    width: 100%;
+    transform: skew(0deg, -5deg) translateY(-120px);
+}
+
+.heading-box
+{
+    position: absolute;
+    width: 1140px;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.frontpage h1
+{
+    color: #B33771; 
+    text-align: center;
+    font-size: 300%;
+    font-weight: 300;
+    z-index: 9999;
+}
+
+.frontpage p
+{
+    margin: 0 5% 0;
+    text-align: center;
+    color: #5c5c5c;
+    z-index: 9999;
+}
+
+.button-box
+{
+    margin-top: 4%;
+    position: absolute;
+    width: 1140px;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+     z-index: 9999;
+}
+
+.signup-button:link,
+.signup-button:visited
+{
+     z-index: 9999;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #B33771;
+    text-align: center;
+    font-size: 130%;
+    font-weight: 400;
+    padding: 10px 25px;
+    transition: all 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.signup-button:hover,
+.signup-button:active
+{
+    background-color: #B33771;
+    color: #fff;
+    border: 1px solid #B33771;
+}
+
+.login-button:link,
+.login-button:visited
+{ z-index: 9999;
+    border: 1px solid #fff;
+    margin-right: 2%;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-size: 130%;
+    font-weight: 400;
+    padding: 10px 30px;
+    transition: all 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.login-button:hover,
+.login-button:active
+{
+    background-color: #B33771;
+    border: 1px solid #B33771;
+}
