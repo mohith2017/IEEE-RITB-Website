@@ -1,4 +1,4 @@
-/* 
+/*
 ---------COLOR CODES----------
 
 PRIMARY MAROON : #720e3d
@@ -24,14 +24,14 @@ SECONDARY MAROON : #B33771
 }
 
 html,
-body 
+body
 {
     background-color: #fff;
     color: #8d8d8d;
     font-family: 'Roboto','Arial', sans-serif;
     font-weight: 300;
     font-size: 20px;
-    text-rendering: optimizeLegibility; 
+    text-rendering: optimizeLegibility;
     text-align: justify;
     overflow-x: hidden;
 }
@@ -40,7 +40,7 @@ body
                 /* REUSABLE COMPONENTS */
 /* -----------------------------------------------------*/
 
-.row 
+.row
 {
     max-width: 1140px;
     margin: 0 auto;
@@ -67,7 +67,6 @@ header img
     border-radius: 50px;
     margin-top: 0.7%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
 
 header h1
@@ -84,22 +83,22 @@ header h1
 
 /*--------------MAIN NAVI------------------*/
 
-.main-nav 
+.main-nav
 {
 /*    margin-top: 1.8%;*/
     float: right;
-    list-style: none; 
+    list-style: none;
 }
 
-.main-nav li 
+.main-nav li
 {
     display: inline-block;
-    margin-left: 0px;   
+    margin-left: 0px;
     position: relative;
 }
 
 .main-nav li a:link,
-.main-nav li a:visited 
+.main-nav li a:visited
 {
     display: inline-block;
     padding: 30px 10px 25px;
@@ -111,20 +110,25 @@ header h1
     transition: all 0.2s;
     border: 1px solid transparent;
     border-bottom: 5px solid transparent;
-   
+
 }
 
 .main-nav li a:hover,
-.main-nav li a:active 
+.main-nav li a:active
 {
     border-bottom: 5px solid #B33771;
     background-color: #461533;
-} 
+}
+
+
+
 
 
 /* -----------------------------------------------------*/
                 /* SECTION - FRONTPAGE */
 /* -----------------------------------------------------*/
+
+
 
 
 .frontpage
@@ -134,11 +138,12 @@ header h1
 
 .skewed
 {
-    margin-top: 35%;
+    margin-top: 40%;
+    margin-bottom: 0;
     background-color: #720e3d;
     background-size: cover;
     background-position: center;
-    height: 46vh;
+    height: 40vh;
     width: 100%;
     transform: skew(0deg, -5deg) translateY(-120px);
 }
@@ -147,16 +152,17 @@ header h1
 {
     position: absolute;
     width: 1140px;
-    top: 45%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .frontpage h1
 {
-    color: #B33771; 
+    color: #B33771;
     text-align: center;
-    font-size: 300%;
+    font-size: 200%;
     font-weight: 300;
     z-index: 9999;
 }
@@ -167,11 +173,21 @@ header h1
     text-align: center;
     color: #5c5c5c;
     z-index: 9999;
+    font-size: 90%;
+}
+
+.heading-box img
+{
+    display: block;
+    height: 30vh;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 .button-box
 {
-    margin-top: 4%;
+    margin-top: 8%;
     position: absolute;
     width: 1140px;
     top: 65%;
@@ -184,14 +200,14 @@ header h1
 .signup-button:link,
 .signup-button:visited
 {
-     z-index: 9999;
+    z-index: 9999;
     border: 1px solid #fff;
     background-color: #fff;
     border-radius: 50px;
     text-decoration: none;
     color: #B33771;
     text-align: center;
-    font-size: 130%;
+    font-size: 100%;
     font-weight: 400;
     padding: 10px 25px;
     transition: all 0.3s;
@@ -208,14 +224,15 @@ header h1
 
 .login-button:link,
 .login-button:visited
-{ z-index: 9999;
+{
+    z-index: 9999;
     border: 1px solid #fff;
     margin-right: 2%;
     border-radius: 50px;
     text-decoration: none;
     color: #fff;
     text-align: center;
-    font-size: 130%;
+    font-size: 100%;
     font-weight: 400;
     padding: 10px 30px;
     transition: all 0.3s;
@@ -227,4 +244,120 @@ header h1
 {
     background-color: #B33771;
     border: 1px solid #B33771;
+}
+
+
+
+
+/* -----------------------------------------------------*/
+                /* SECTION - ABOUT-US */
+/* -----------------------------------------------------*/
+
+
+
+.about h1
+{
+    color: #540a2d;
+    font-size: 250%;
+    font-weight: 300;
+    text-align: left;
+    margin: 0;
+    margin-top: 20%;
+}
+
+.skewed1
+{
+    margin: 0;
+    background-color: #992f61;
+    background-size: cover;
+    background-position: center;
+    height: 65vh;
+    width: 100%;
+    transform: skew(0deg, 5deg) translateY(-120px);
+}
+
+.aboutus-box
+{
+    width: 80%;
+    height: auto;
+    margin: 0 10%;
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    border-radius: 7px;
+    transform: skew(0deg, -5deg) translateY(-120px);
+}
+
+.aboutus-textbox
+{
+    width: 50%;
+    float: left;
+    margin: 0 5%;
+    margin-top: 8%;
+}
+
+.aboutus-box img
+{
+    height: 35vh;
+    float: right;
+    margin-top: 20%;
+    margin-right: 10%;
+    opacity: 1;
+}
+
+.aboutus-box h2
+{
+    margin: 0 auto;
+    margin-top: 5%;
+    color: #540a2d;
+    font-weight: 300;
+    padding: 20px;
+    padding-left: 40px;
+    font-size: 120%;
+    text-align: justify;
+    margin-bottom: 5%;
+}
+
+.readmore-button:link,
+.readmore-button:visited
+{
+    margin: 0 auto;
+    margin-left: 5%;
+    z-index: 9999;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #B33771;
+    text-align: center;
+    font-size: 100%;
+    font-weight: 400;
+    padding: 10px 25px;
+    transition: all 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.readmore-button:hover,
+.readmore-button:active
+{
+    background-color: #e6e6e6;
+    color: #B33771;
+    border: 1px solid #e6e6e6;
+}
+
+.iconforward
+{
+    transition: margin-right 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+
+.readmore-button:hover .iconforward
+{
+    margin-right: 1%;
+}
+
+.thickness
+{
+    font-weight: 700;
 }
