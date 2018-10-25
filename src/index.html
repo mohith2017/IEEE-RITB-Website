@@ -1,88 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        
+
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
-        
-        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
-        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
-        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-        
+
+        <link rel="stylesheet" type="text/css" href="assets/vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="assets/vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="assets/vendors/css/animate.css">
+        <link rel="stylesheet" type="text/css" href="assets/resources/css/style.css">
+
         <link href="https://unpkg.com/ionicons@4.3.0/dist/css/ionicons.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
-        
+
         <title>IEEE RIT</title>
-        
-        
+
+
     </head>
-    
-    
+
+
     <body>
-        
+
         <header>
-        
+
             <nav>
-                
+
                     <div class="row">
-                        
-                        <img src="resources/img/msrit_logo_edited.png" alt="Ramiah Logo">
-                        <h1>IEEE </h1>
-                        
+
+                        <img src="assets/resources/img/msrit_logo_edited.png" alt="Ramiah Logo">
+                        <h1>IEEE</h1>
+
                         <ul class="main-nav">
                             <li><a href="#">home</a></li>
                             <li><a href="#">about</a></li>
                             <li><a href="#">events</a></li>
                             <li><a href="#">contact</a></li>
-<!--
-                            <span class="signup-button">
-                                <li><a href="#">Sign Up</a></li>
-                            </span>
--->
                         </ul>
-                    
-                    </div> 
+
+                    </div>
             </nav>
-            
-            
-        </header>  
-        
-        
+
+
+        </header>
+
+
         <section class="frontpage">
-            
+
             <div class="wrapper">
-            
+
 
                 <div class="heading-box">
-                    <h1>Welcome to IEEE RIT</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                    <img src="assets/resources/img/computer-icon.svg" alt="computer icon">
+                    <h1>Welcome to IEEE CIS RIT</h1>
+                    <div class="row">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                    </div>
                 </div>
-            
-                <div class="button-box">
-                    <a href="#" class="login-button">Log In</a>
-                    <a href="#" class="signup-button">Sign Up</a>
+
+                <div class="skewed">
+                    <div class="button-box">
+                        <a href="#" class="login-button">Log In</a>
+                        <a href="#" class="signup-button">Sign Up</a>
+                    </div>
                 </div>
-            
-            </div>    
+
+
+            </div>
 
         </section>
-        
-        <div class="skewed">
-        </div>
-        
-        
+
+
+
+        <section class="about">
+
+            <div class="skewed1">
+
+                <div class= "aboutus-box">
+<!--
+                    <div class="row">
+                        <h1>About Us</h1>
+                    </div>
+-->
+                    <div class="aboutus-textbox">
+                        <h1>About Us</h1>
+                        <h2>We're a professional society focussing on the theory, design, application, and development of computational paradigms.</h2>
+                        <a href="aboutus.html" class="readmore-button"><span class="iconforward">Read More</span><span class="thickness"> &#x27E9;</span> </a>
+                    </div>
+                    <img src="assets/resources/img/multiple-users-silhouette.svg" alt="about-us icon">
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#about1">Home</a></li>
+                        <li><a href="#donate1">About</a></li>
+                        <li><a href="#feedback1">Events</a></li>
+                        <li><a href="#contact1">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#" class="facbook"><ion-icon name="logo-facebook" size="large"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-linkedin" size="large"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-twitter" size="large"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-instagram" size="large"></ion-icon></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Copyright  &copy;  2018 by IEEE CIS RIT. All rights reserved.
+                </p>
+            </div>
+        </footer>
+
+
+
+
+
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://unpkg.com/ionicons@4.3.0/dist/ionicons.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/respond.js@1/Gruntfile.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/selectivizr@1/selectivizr.min.js"></script> 
-        
+        <script src="https://cdn.jsdelivr.net/npm/selectivizr@1/selectivizr.min.js"></script>
+
         <script src="vendors/js/jquery.waypoints.min.js"></script>
         <script src="resources/js/script.js"></script>
 
-        
+
     </body>
 
 </html>

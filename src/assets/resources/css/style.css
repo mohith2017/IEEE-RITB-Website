@@ -1,0 +1,479 @@
+/*
+---------COLOR CODES----------
+
+PRIMARY MAROON : #720e3d
+SECONDARY MAROON : #B33771
+
+*/
+
+
+/* -----------------------------------------------------*/
+                     /* BASIC SETUP */
+/* -----------------------------------------------------*/
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+html,
+body
+{
+    background-color: #fff;
+    color: #8d8d8d;
+    font-family: 'Roboto','Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    text-align: justify;
+    overflow-x: hidden;
+}
+
+/* -----------------------------------------------------*/
+                /* REUSABLE COMPONENTS */
+/* -----------------------------------------------------*/
+
+.row
+{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* -----------------------------------------------------*/
+                       /* HEADER */
+/* -----------------------------------------------------*/
+
+
+header
+{
+    background-color: #720e3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+header img
+{
+    width: auto;
+    height: 60px;
+    float: left;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 50px;
+    margin-top: 0.7%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+header h1
+{
+    color: #B33771;
+    float: left;
+    margin: 0;
+    margin-left: 2%;
+    margin-top: 0.4%;
+    font-size: 300%;
+    font-weight: 700;
+}
+
+
+/*--------------MAIN NAVI------------------*/
+
+.main-nav
+{
+/*    margin-top: 1.8%;*/
+    float: right;
+    list-style: none;
+}
+
+.main-nav li
+{
+    display: inline-block;
+    margin-left: 0px;
+    position: relative;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited
+{
+    display: inline-block;
+    padding: 30px 10px 25px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 75%;
+    font-weight: 300;
+    transition: all 0.2s;
+    border: 1px solid transparent;
+    border-bottom: 5px solid transparent;
+
+}
+
+.main-nav li a:hover,
+.main-nav li a:active
+{
+    border-bottom: 5px solid #B33771;
+    background-color: #461533;
+}
+
+
+
+
+
+/* -----------------------------------------------------*/
+                /* SECTION - FRONTPAGE */
+/* -----------------------------------------------------*/
+
+
+
+
+.frontpage
+{
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+}
+
+.wrapper
+{
+    position: relative;
+    z-index: 2;
+    background-color: white;
+}
+
+.skewed
+{
+    margin-top: 40%;
+    margin-bottom: 0;
+    background-color: #720e3d;
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    width: 100%;
+    transform: skew(0deg, -5deg) translateY(-120px);
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.heading-box
+{
+    position: absolute;
+    width: 1140px;
+    top: -110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #fff;
+    margin-top: 4%;
+    height: 66vh;
+    width: 100%;
+}
+
+.frontpage h1
+{
+    color: #B33771;
+    text-align: center;
+    font-size: 200%;
+    font-weight: 300;
+    z-index: 9999;
+}
+
+.frontpage p
+{
+    margin: 0 5% 0;
+    text-align: center;
+    color: #5c5c5c;
+    z-index: 9999;
+    font-size: 90%;
+}
+
+.heading-box img
+{
+    display: block;
+    height: 30vh;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.button-box
+{
+    position: absolute;
+    width: 1140px;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    transform: skew(0deg, 5deg) translateY(0);
+}
+
+.signup-button:link,
+.signup-button:visited
+{
+    z-index: 9999;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #B33771;
+    text-align: center;
+    font-size: 100%;
+    font-weight: 400;
+    padding: 10px 25px;
+    transition: all 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.signup-button:hover,
+.signup-button:active
+{
+    background-color: #B33771;
+    color: #fff;
+    border: 1px solid #B33771;
+}
+
+.login-button:link,
+.login-button:visited
+{
+    z-index: 9999;
+    border: 1px solid #fff;
+    margin-right: 2%;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-size: 100%;
+    font-weight: 400;
+    padding: 10px 30px;
+    transition: all 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.login-button:hover,
+.login-button:active
+{
+    background-color: #B33771;
+    border: 1px solid #B33771;
+}
+
+
+
+
+/* -----------------------------------------------------*/
+                /* SECTION - ABOUT-US */
+/* -----------------------------------------------------*/
+
+.about
+{
+    position: relative;
+    z-index: 2;
+    margin-bottom: 150px;
+
+}
+
+.about h1
+{
+    color: #540a2d;
+    font-size: 250%;
+    font-weight: 300;
+    text-align: left;
+    margin: 0;
+    margin-top: 20%;
+}
+
+.skewed1
+{
+    margin: 0;
+    background-color: #992f61;
+    background-size: cover;
+    background-position: center;
+    height: 65vh;
+    width: 100%;
+    transform: skew(0deg, 5deg) translateY(-120px);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.aboutus-box
+{
+    width: 80%;
+    height: auto;
+    margin: 0 10%;
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    border-radius: 7px;
+    transform: skew(0deg, -5deg) translateY(-120px);
+}
+
+.aboutus-textbox
+{
+    width: 50%;
+    float: left;
+    margin: 0 5%;
+    margin-top: 8%;
+}
+
+.aboutus-box img
+{
+    height: 35vh;
+    float: right;
+    margin-top: 20%;
+    margin-right: 10%;
+    opacity: 1;
+}
+
+.aboutus-box h2
+{
+    margin: 0 auto;
+    margin-top: 5%;
+    color: #540a2d;
+    font-weight: 300;
+    padding: 20px;
+    padding-left: 40px;
+    font-size: 120%;
+    text-align: justify;
+    margin-bottom: 5%;
+}
+
+.readmore-button:link,
+.readmore-button:visited
+{
+    margin: 0 auto;
+    margin-left: 5%;
+    z-index: 9999;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #B33771;
+    text-align: center;
+    font-size: 100%;
+    font-weight: 400;
+    padding: 10px 25px;
+    transition: all 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.readmore-button:hover,
+.readmore-button:active
+{
+    background-color: #e6e6e6;
+    color: #B33771;
+    border: 1px solid #e6e6e6;
+}
+
+.iconforward
+{
+    transition: margin-right 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+
+.readmore-button:hover .iconforward
+{
+    margin-right: 1%;
+}
+
+.thickness
+{
+    font-weight: 700;
+}
+
+
+
+/* -----------------------------------------------------*/
+                    /* FOOTER */
+/* -----------------------------------------------------*/
+
+
+footer
+{
+    background-color: #333;
+    padding-top: 210px;
+    padding-bottom: 50px;
+    font-size: 80%;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.footer-nav{
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child
+{
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active
+{
+    color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited
+{
+    font-size: 150%;
+}
+
+ion-icon[name=logo-facebook],
+ion-icon[name=logo-linkedin],
+ion-icon[name=logo-twitter],
+ion-icon[name=logo-instagram]
+{
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.social-links li a ion-icon[name=logo-facebook]:hover{
+    color: #3b5998;
+}
+
+.social-links li a ion-icon[name=logo-linkedin]:hover{
+    color: #007bb5;
+}
+
+.social-links li a ion-icon[name=logo-twitter]:hover{
+    color: #1da1f2;
+}
+
+.social-links li a ion-icon[name=logo-instagram]:hover{
+    color: #c32aa3;
+}
+
+footer p{
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}
