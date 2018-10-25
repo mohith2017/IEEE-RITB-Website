@@ -13,6 +13,7 @@
 
         <link href="https://unpkg.com/ionicons@4.3.0/dist/css/ionicons.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
+        <link href="src/styles.css">
 
         <title>IEEE RIT</title>
 
@@ -26,16 +27,16 @@
 
             <nav>
 
-                    <div class="row">
+                    <div class="row" id="top1">
 
-                        <img src="assets/resources/img/msrit_logo_edited.png" alt="Ramiah Logo">
-                        <h1>IEEE</h1>
+                        <a href="http://msrit.edu/"><img src="assets/resources/img/msrit_logo_edited.png" alt="Ramiah Logo"></a>
+                        <h1>IEEE CIS</h1>
 
                         <ul class="main-nav">
-                            <li><a href="#">home</a></li>
-                            <li><a href="#">about</a></li>
+                            <li><a href="aboutus.html">home</a></li>
+                            <li><a href="#Aboutus">about</a></li>
                             <li><a href="#">events</a></li>
-                            <li><a href="#">contact</a></li>
+                            <li><a href="pages/contact.html">contact</a></li>
                         </ul>
 
                     </div>
@@ -54,8 +55,7 @@
                     <img src="assets/resources/img/computer-icon.svg" alt="computer icon">
                     <h1>Welcome to IEEE CIS RIT</h1>
                     <div class="row">
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-                    </div>
+                        </div>
                 </div>
 
                 <div class="skewed">
@@ -82,7 +82,7 @@
                         <h1>About Us</h1>
                     </div>
 -->
-                    <div class="aboutus-textbox">
+                    <div class="aboutus-textbox" id="Aboutus">
                         <h1>About Us</h1>
                         <h2>We're a professional society focussing on the theory, design, application, and development of computational paradigms.</h2>
                         <a href="aboutus.html" class="readmore-button"><span class="iconforward">Read More</span><span class="thickness"> &#x27E9;</span> </a>
@@ -102,18 +102,18 @@
             <div class="row">
                 <div class="col span-1-of-2">
                     <ul class="footer-nav">
-                        <li><a href="#about1">Home</a></li>
-                        <li><a href="#donate1">About</a></li>
+                        <li><a href="#top1">Home</a></li>
+                        <li><a href="#Aboutus">About</a></li>
                         <li><a href="#feedback1">Events</a></li>
                         <li><a href="#contact1">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col span-1-of-2">
                     <ul class="social-links">
-                        <li><a href="#" class="facbook"><ion-icon name="logo-facebook" size="large"></ion-icon></a></li>
-                        <li><a href="#"><ion-icon name="logo-linkedin" size="large"></ion-icon></a></li>
-                        <li><a href="#"><ion-icon name="logo-twitter" size="large"></ion-icon></a></li>
-                        <li><a href="#"><ion-icon name="logo-instagram" size="large"></ion-icon></a></li>
+                        <li><a href="https://www.facebook.com/ieeeritb/" class="facbook"><ion-icon name="logo-facebook" size="large"></ion-icon></a></li>
+                        <li><a href=""><ion-icon name="logo-linkedin" size="large"></ion-icon></a></li>
+                        <li><a href="https://twitter.com/ieeeritb"><ion-icon name="logo-twitter" size="large"></ion-icon></a></li>
+                        <li><a href="https://www.instagram.com/ieeeritb"><ion-icon name="logo-instagram" size="large"></ion-icon></a></li>
                     </ul>
                 </div>
             </div>
@@ -137,6 +137,38 @@
 
         <script src="vendors/js/jquery.waypoints.min.js"></script>
         <script src="resources/js/script.js"></script>
+
+        <script>
+$('a[href*="#"]')
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+      &&
+      location.hostname == this.hostname
+    ) {
+
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) {
+            return false;
+          } else {
+            $target.attr('tabindex','-1');
+            $target.focus();
+          };
+        });
+      }
+    }
+  });
+        </script>
 
 
     </body>
