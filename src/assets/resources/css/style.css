@@ -34,6 +34,7 @@ body
     text-rendering: optimizeLegibility;
     text-align: justify;
     overflow-x: hidden;
+    background-color: #fff;
 }
 
 /* -----------------------------------------------------*/
@@ -75,8 +76,8 @@ header h1
     float: left;
     margin: 0;
     margin-left: 2%;
-    margin-top: 0.4%;
-    font-size: 300%;
+    margin-top: 1%;
+    font-size: 250%;
     font-weight: 700;
 }
 
@@ -164,7 +165,7 @@ header h1
 {
     position: absolute;
     width: 1140px;
-    top: -110%;
+    top: -90%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -178,7 +179,7 @@ header h1
 {
     color: #B33771;
     text-align: center;
-    font-size: 200%;
+    font-size: 250%;
     font-weight: 300;
     z-index: 9999;
 }
@@ -195,7 +196,7 @@ header h1
 .heading-box img
 {
     display: block;
-    height: 30vh;
+    height: 45%;
     width: 50%;
     margin-left: 25%;
     margin-right: 25%;
@@ -268,12 +269,12 @@ header h1
                 /* SECTION - ABOUT-US */
 /* -----------------------------------------------------*/
 
+
+
 .about
 {
     position: relative;
-    z-index: 2;
-    margin-bottom: 150px;
-
+    z-index: 3;
 }
 
 .about h1
@@ -305,8 +306,7 @@ header h1
     margin: 0 10%;
     background-size: cover;
     background-position: center;
-    height: 30vh;
-    border-radius: 7px;
+    height: auto;
     transform: skew(0deg, -5deg) translateY(-120px);
 }
 
@@ -387,7 +387,246 @@ header h1
 
 
 /* -----------------------------------------------------*/
-                    /* FOOTER */
+                /* SECTION - EVENTS */
+/* -----------------------------------------------------*/
+
+
+
+.events
+{
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+    margin-top: -200px;
+    margin-bottom: 200px;
+}
+
+.events h1
+{
+    margin: 0;
+    margin: 15% 5% 5% 0%;
+    color: #B33771;
+    font-size: 300%;
+    font-weight: 300;
+    background-color: #fff;
+
+}
+
+.events-box,
+.news-box
+{
+    display: block;
+    position: relative;
+    margin-bottom: 30%;
+    background-color: #fff;
+    width: 90%;
+    height: 70vh;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header-box
+{
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    background-color: #fff;
+    border-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.header-box h2
+{
+    color: #B33771;
+    padding: 3% 0 0 10%;
+    font-size: 250%;
+    font-weight: 300;
+}
+
+.header-box h2:after
+{
+    display: block;
+    position: absolute;
+    height: 10px;
+    background-color: #B33771;
+    content: " ";
+    width: 99.9%;
+    bottom: 0;
+    transform: translateX(-50px);
+}
+
+.event-heading-box h2:after
+{
+    transform: translateX(-25px);
+    width: 200%;
+}
+
+.event-heading-box
+{
+    position: absolute;
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+
+
+
+
+.upcoming-box
+{
+    float: right;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+.upcoming-box .col
+{
+    margin-left: 0;
+}
+
+.header-box a:link,
+.header-box a:visited
+{
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 100%;
+    font-weight: 400;
+    padding: 10px 25px;
+    background-color: #B33771;
+    text-align: center;
+    transform: translateX(-50px);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: all 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.header-box a:hover,
+.header-box a:active
+{
+    background-color: #fff;
+    color: #B33771;
+}
+
+
+
+
+
+.sample-box
+{
+    position: absolute;
+    background-color: #fff;
+    height: 85%;
+    bottom: 0;
+    width: 100%;
+}
+
+.event-rows
+{
+    display: block;
+    position: relative;
+    height: 25%;
+    width: 100%;
+    background-color: #fff;
+}
+
+.event-rows h3
+{
+    color: #4b4b4b;
+    font-size: 130%;
+    font-weight: 400;
+    padding: 20px 20px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    text-align: justify;
+}
+
+.event-rows h3:after
+{
+    display: block;
+    height: 1px;
+    background-color: #B33771;
+    content: " ";
+    width: 170px;
+    transform: translateY(-15px);
+    margin-left: 67.6%;
+}
+
+.event-rows p
+{
+    color: #5c5c5c;
+    padding: 0 20px;
+    font-size: 97%;
+    padding-bottom: 10px;
+    text-align: justify;
+
+}
+
+.event-rows:first-child h3
+{
+    padding-top:  15px;
+}
+
+.event-rows-alt
+{
+    background-color: #f7f7f7;
+}
+
+.sample-box a:link,
+.sample-box a:visited
+{
+    text-decoration: none;
+}
+
+.sample-box a:link .event-rows,
+.sample-box a:visited .event-rows
+{
+    transition: all 0.1s;
+    transition-timing-function: ease-in;
+}
+
+.sample-box a:hover .event-rows,
+.sample-box a:active .event-rows
+{
+    background-color: #720e3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sample-box a:link h3,
+.sample-box a:visited h3
+{
+    transition: all 0.1s;
+    transition-timing-function: ease-in;
+}
+
+.sample-box a:hover h3,
+.sample-box a:active h3
+{
+    color: #B33771;
+}
+
+.sample-box a:link p,
+.sample-box a:visited p
+{
+    transition: all 0.1s;
+    transition-timing-function: ease-in;
+}
+
+.sample-box a:hover p,
+.sample-box a:active p
+{
+    color: #fff;
+}
+
+
+
+/* -----------------------------------------------------*/
+                      /* FOOTER */
 /* -----------------------------------------------------*/
 
 
@@ -472,7 +711,8 @@ ion-icon[name=logo-instagram]
     color: #c32aa3;
 }
 
-footer p{
+footer p
+{
     color: #888;
     text-align: center;
     margin-top: 20px;
