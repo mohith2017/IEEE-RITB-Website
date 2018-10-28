@@ -398,7 +398,7 @@ header h1
     z-index: 2;
     background-color: #fff;
     margin-top: -200px;
-    margin-bottom: 200px;
+/*    margin-bottom: 5%;*/
 }
 
 .events h1
@@ -417,9 +417,10 @@ header h1
 {
     display: block;
     position: relative;
-    margin-bottom: 30%;
     background-color: #fff;
     width: 90%;
+    margin: 0 auto;
+    margin-bottom: 30%;
     height: 70vh;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -470,10 +471,6 @@ header h1
     height: 100%;
 }
 
-
-
-
-
 .upcoming-box
 {
     float: right;
@@ -512,9 +509,6 @@ header h1
     background-color: #fff;
     color: #B33771;
 }
-
-
-
 
 
 .sample-box
@@ -623,6 +617,34 @@ header h1
     color: #fff;
 }
 
+.skewed2
+{
+    margin: 0;
+    margin-top: 2%;
+    background-color: #992f61;
+    height: 8vh;
+    width: 100%;
+    transform: skew(0deg, 4deg) translateY(-120px);
+    position: relative;
+    z-index: 3;
+/*    border-bottom: 3px solid #fff;*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.skewed3
+{
+    margin: 0;
+    margin-bottom: 5%;
+    background-color: #720e3d;
+    height: 11vh;
+    width: 100%;
+    transform: skew(0deg, 4deg) translateY(-120px);
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 
 
 /* -----------------------------------------------------*/
@@ -633,7 +655,7 @@ header h1
 footer
 {
     background-color: #333;
-    padding-top: 210px;
+    padding-top: 205px;
     padding-bottom: 50px;
     font-size: 80%;
     bottom: 0;
