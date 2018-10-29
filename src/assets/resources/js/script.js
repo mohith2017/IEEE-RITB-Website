@@ -1,5 +1,6 @@
 /*----------SMOOTH SCROLLING----------*/
 
+
 $('a[href*="#"]')
   .not('[href="#"]')
   .not('[href="#0"]')
@@ -29,3 +30,109 @@ $('a[href*="#"]')
       }
     }
   });
+
+
+
+
+$(document).ready(function()
+{
+
+/*--------------STICKY NAVI-----------------*/
+
+
+
+    $('.js--skewed').waypoint(function(direction)
+    {
+        if(direction == "down"){
+            $('nav').addClass('sticky');
+            $('.sticky').addClass('animated fadeInDown');
+
+        }else{
+
+            $('nav').removeClass('sticky');
+        }
+    }, {
+        offset: '300px;'
+    });
+
+
+/*--------------SCROLL TO TOP-----------------*/
+
+
+    $('.js--skewed').waypoint(function(direction)
+    {
+        if (direction == "down") {
+            document.getElementById("top-btn").style.display = "block";
+            $('#top-btn').addClass('animated fadeInUp');
+        } else {
+            document.getElementById("top-btn").style.display = "none";
+//            $('#top-btn').addClass('animated fadeInDown');
+        }
+
+    }, {
+        offset: '200px;'
+    });
+
+
+/*--------------ANIMATION ON SCROLL-----------------*/
+
+
+    $('.js--button-box').waypoint(function(direction){
+
+        $('.js--button-box').addClass('animated fadeInDown');
+
+    },  {
+        offset: '160%'
+
+    });
+
+
+    $('.js--computericon').waypoint(function(direction){
+
+        $('.js--computericon').addClass('animated fadeIn');
+
+    },  {
+        offset: '160%'
+
+    });
+
+
+    $('.js--aboutusicon').waypoint(function(direction){
+
+        $('.js--aboutusicon').addClass('animated fadeInRight');
+
+    },  {
+        offset: '60%'
+
+    });
+
+    $('.js--events-box').waypoint(function(direction){
+
+        $('.js--events-box').addClass('animated fadeInLeft');
+
+    },  {
+        offset: '60%'
+
+    });
+
+    $('.js--news-box').waypoint(function(direction){
+
+        $('.js--news-box').addClass('animated fadeInRight');
+
+    },  {
+        offset: '60%'
+
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+});
