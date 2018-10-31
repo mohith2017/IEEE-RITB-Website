@@ -79,7 +79,7 @@ $(document).ready(function()
 
     $('.js--button-box').waypoint(function(direction){
 
-        $('.js--button-box').addClass('animated fadeInDown');
+        $('.js--button-box').addClass('animated fadeIn');
 
     },  {
         offset: '160%'
@@ -89,7 +89,7 @@ $(document).ready(function()
 
     $('.js--computericon').waypoint(function(direction){
 
-        $('.js--computericon').addClass('animated fadeIn');
+        $('.js--computericon').addClass('animated fadeInUp');
 
     },  {
         offset: '160%'
@@ -125,7 +125,24 @@ $(document).ready(function()
     });
 
 
+/*--------------LOGIN BOX-----------------*/
 
+
+    document.querySelector('.login-button').addEventListener('click', function(){
+        $('.login-box').addClass('animated fadeInDown');
+        $('.bg-modal').addClass('animated fadeIn');
+        document.querySelector('.bg-modal').style.display = 'flex';
+    });
+
+    document.querySelector('.login-box-close').addEventListener('click', function(){
+        $('.login-box').addClass('animated fadeOutUp');
+        $('.bg-modal').addClass('animated fadeOut');
+        setTimeout(function () {
+            document.querySelector('.bg-modal').style.display = 'none';
+            $('.login-box').removeClass('animated fadeOutUp');
+            $('.bg-modal').removeClass('animated fadeOut');
+        }, 500);
+    });
 
 
 
