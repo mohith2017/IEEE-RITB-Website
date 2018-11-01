@@ -41,18 +41,18 @@ $(document).ready(function()
 
 
 
-    $('.js--skewed').waypoint(function(direction)
+    $('.js--heading-box').waypoint(function(direction)
     {
-        if(direction == "down"){
+        if(direction == "down")
+        {
             $('nav').addClass('sticky');
             $('.sticky').addClass('animated fadeInDown');
-
-        }else{
-
+        }
+        else
+        {
+            $('.sticky').removeClass('animated fadeInDown');
             $('nav').removeClass('sticky');
         }
-    }, {
-        offset: '300px;'
     });
 
 
@@ -62,13 +62,15 @@ $(document).ready(function()
     $('.js--skewed').waypoint(function(direction)
     {
         if (direction == "down") {
+             $('#top-btn').addClass('animated fadeInUp');
             document.getElementById("top-btn").style.display = "block";
-            $('#top-btn').addClass('animated fadeInUp');
         } else {
-            document.getElementById("top-btn").style.display = "none";
-//            $('#top-btn').addClass('animated fadeInDown');
+            $('#top-btn').addClass('animated fadeOutDown');
+            setTimeout(function () {
+                document.getElementById("top-btn").style.display = "none";
+                $('#top-btn').removeClass('animated fadeOutDown');
+        }, 500);
         }
-
     }, {
         offset: '200px;'
     });

@@ -141,7 +141,7 @@ header h1
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.92);
+    background-color: #fff;
     z-index: 9999;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -149,6 +149,7 @@ header h1
 .sticky img
 {
     height: 50px;
+    box-shadow: none;
 }
 
 .sticky h1
@@ -213,7 +214,7 @@ header h1
 {
     position: absolute;
     width: 1140px;
-    top: -90%;
+    top: -100%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -230,6 +231,12 @@ header h1
     font-size: 250%;
     font-weight: 400;
     z-index: 9999;
+}
+
+#small-size
+{
+    font-size: 60%;
+    font-weight: 300;
 }
 
 .frontpage p
@@ -932,6 +939,35 @@ footer p
     margin-top: 20px;
 }
 
+
+/* -----------------------------------------------------*/
+/* -----------------------------------------------------*/
+                    /* USERPAGE.html */
+/* -----------------------------------------------------*/
+/* -----------------------------------------------------*/
+
+
+.userpage-header
+{
+    background-color: #fff;
+}
+
+.userpage-header h1
+{
+    color: #B33771;
+    font-size: 300%;
+    font-weight: 300;
+    margin: 10% 0% 5%;
+}
+
+.userpage-header img
+{
+    height: 25vh;
+    width: auto;
+    border-radius: 200%;
+    filter: contrast(1.1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 
 /* -----------------------------------------------------*/
