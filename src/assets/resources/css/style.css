@@ -34,6 +34,7 @@ body
     text-rendering: optimizeLegibility;
     text-align: justify;
     overflow-x: hidden;
+    background-color: #fff;
 }
 
 /* -----------------------------------------------------*/
@@ -45,6 +46,17 @@ body
     max-width: 1140px;
     margin: 0 auto;
 }
+
+.hidden
+{
+  display: none;
+}
+
+.visuallyhidden
+{
+  opacity: 0;
+}
+
 
 /* -----------------------------------------------------*/
                        /* HEADER */
@@ -75,8 +87,8 @@ header h1
     float: left;
     margin: 0;
     margin-left: 2%;
-    margin-top: 0.4%;
-    font-size: 300%;
+    margin-top: 1%;
+    font-size: 250%;
     font-weight: 700;
 }
 
@@ -85,7 +97,6 @@ header h1
 
 .main-nav
 {
-/*    margin-top: 1.8%;*/
     float: right;
     list-style: none;
 }
@@ -108,7 +119,7 @@ header h1
     font-size: 75%;
     font-weight: 300;
     transition: all 0.2s;
-    border: 1px solid transparent;
+/*    border: 1px solid transparent;*/
     border-bottom: 5px solid transparent;
 
 }
@@ -121,7 +132,46 @@ header h1
 }
 
 
+/*--------------STICKY NAVI------------------*/
 
+
+.sticky
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 9999;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sticky img
+{
+    height: 50px;
+    box-shadow: none;
+}
+
+.sticky h1
+{
+    font-size: 200%;
+    margin-top: 1.1%;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited
+{
+    padding: 25px 10px 20px;
+    color: #3b3b3b;
+}
+
+.sticky .main-nav li a:hover,
+.sticky .main-nav li a:active
+{
+    background-color: #fff;
+    color: #B33771;
+    border-bottom: 5px solid #B33771;
+}
 
 
 /* -----------------------------------------------------*/
@@ -164,7 +214,7 @@ header h1
 {
     position: absolute;
     width: 1140px;
-    top: -110%;
+    top: -100%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -178,9 +228,15 @@ header h1
 {
     color: #B33771;
     text-align: center;
-    font-size: 200%;
-    font-weight: 300;
+    font-size: 250%;
+    font-weight: 400;
     z-index: 9999;
+}
+
+#small-size
+{
+    font-size: 60%;
+    font-weight: 300;
 }
 
 .frontpage p
@@ -195,7 +251,7 @@ header h1
 .heading-box img
 {
     display: block;
-    height: 30vh;
+    height: 45%;
     width: 50%;
     margin-left: 25%;
     margin-right: 25%;
@@ -262,18 +318,163 @@ header h1
 }
 
 
+/* -----------------------------------------------------*/
+                /* DIV - LOGIN BOX */
+/* -----------------------------------------------------*/
 
+
+.bg-modal
+{
+	background-color: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+    z-index: 4;
+}
+
+.login-box
+{
+    position: absolute;
+    width: 23%;
+    height: 45%;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.login-box-header
+{
+    position: relative;
+    width: 100%;
+    height: 25%;
+    background-color: #720e3d;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.login-box-body
+{
+    position: relative;
+    height: 75%;
+    width: 100%;
+    background-color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.login-box h1
+{
+    float: left;
+    color: #B33771;
+    margin: 0;
+    margin: 5% 0 65% 5%;
+}
+
+.login-box h1:after
+{
+    display: block;
+    position: absolute;
+    height: 7px;
+    background-color: #B33771;
+    content: " ";
+    width: 100%;
+    bottom: 0;
+    transform: translateX(-5%);
+}
+
+.login-box a:link,
+.login-box a:visited
+{
+    text-decoration: none;
+}
+
+.login-box i
+{
+    float: right;
+    margin: 5%;
+    font-size: 170%;
+    color: #B33771;
+    transition: all 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.login-box i:hover,
+.login-box i:active
+{
+    color: #a32962;
+}
+
+form
+{
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+
+input[type=password],
+input[type=email]
+{
+    margin: 0;
+    margin-top: 5%;
+    width: 69%;
+    padding: 10px;
+    margin-left: 0%;
+    border: none;
+	border-bottom: 1px solid #b7b7b7;
+    transition: all 0.2s;
+    transition-timing-function: ease-in-out;
+    font-size: 90%;
+}
+
+input[type=email]:focus,
+input[type=password]:focus
+{
+    border-bottom: 1px solid #B33771;
+}
+
+input[type=submit]
+{
+    display: block;
+    margin: 0 auto;
+    padding: 10px 30px;
+    cursor: pointer;
+    margin-top: 15%;
+    font-weight: 400;
+    font-size: 100%;
+    text-decoration: none;
+    border-radius: 200px;
+    border: 1px solid #8d0f4a;
+    background-color: #8d0f4a;
+    color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+input[type=submit]:hover,
+input[type=submit]:active
+{
+    background-color: #720e3d;
+    color: #fff;
+    border: 1px solid #720e3d;
+}
 
 /* -----------------------------------------------------*/
                 /* SECTION - ABOUT-US */
 /* -----------------------------------------------------*/
 
+
+
 .about
 {
     position: relative;
-    z-index: 2;
-    margin-bottom: 150px;
-
+    z-index: 3;
 }
 
 .about h1
@@ -305,8 +506,7 @@ header h1
     margin: 0 10%;
     background-size: cover;
     background-position: center;
-    height: 30vh;
-    border-radius: 7px;
+    height: auto;
     transform: skew(0deg, -5deg) translateY(-120px);
 }
 
@@ -324,7 +524,6 @@ header h1
     float: right;
     margin-top: 20%;
     margin-right: 10%;
-    opacity: 1;
 }
 
 .aboutus-box h2
@@ -387,14 +586,275 @@ header h1
 
 
 /* -----------------------------------------------------*/
-                    /* FOOTER */
+                /* SECTION - EVENTS */
+/* -----------------------------------------------------*/
+
+
+
+.events
+{
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+    margin-top: -200px;
+/*    margin-bottom: 5%;*/
+}
+
+.events h1
+{
+    margin: 0;
+    margin: 15% 5% 5% 0%;
+    color: #B33771;
+    font-size: 300%;
+    font-weight: 300;
+    background-color: #fff;
+
+}
+
+.events-box,
+.news-box
+{
+    display: block;
+    position: relative;
+    background-color: #fff;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 30%;
+    height: 70vh;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header-box
+{
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    background-color: #fff;
+    border-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.header-box h2
+{
+    color: #B33771;
+    padding: 3% 0 0 10%;
+    font-size: 250%;
+    font-weight: 300;
+}
+
+.header-box h2:after
+{
+    display: block;
+    position: absolute;
+    height: 10px;
+    background-color: #B33771;
+    content: " ";
+    width: 99.9%;
+    bottom: 0;
+    transform: translateX(-50px);
+}
+
+.event-heading-box h2:after
+{
+    transform: translateX(-25px);
+    width: 200%;
+}
+
+.event-heading-box
+{
+    position: absolute;
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.upcoming-box
+{
+    float: right;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+.upcoming-box .col
+{
+    margin-left: 0;
+}
+
+.header-box a:link,
+.header-box a:visited
+{
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 100%;
+    font-weight: 400;
+    padding: 10px 25px;
+    background-color: #B33771;
+    text-align: center;
+    transform: translateX(-50px);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: all 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.header-box a:hover,
+.header-box a:active
+{
+    background-color: #fff;
+    color: #B33771;
+}
+
+
+.sample-box
+{
+    position: absolute;
+    background-color: #fff;
+    height: 85%;
+    bottom: 0;
+    width: 100%;
+}
+
+.event-rows
+{
+    display: block;
+    position: relative;
+    height: 25%;
+    width: 100%;
+    background-color: #fff;
+}
+
+.event-rows h3
+{
+    color: #4b4b4b;
+    font-size: 130%;
+    font-weight: 400;
+    padding: 20px 20px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    text-align: justify;
+}
+
+.event-rows h3:after
+{
+    display: block;
+    height: 1px;
+    background-color: #B33771;
+    content: " ";
+    width: 170px;
+    transform: translateY(-15px);
+    margin-left: 67.6%;
+}
+
+.event-rows p
+{
+    color: #5c5c5c;
+    padding: 0 20px;
+    font-size: 97%;
+    padding-bottom: 10px;
+    text-align: justify;
+
+}
+
+.event-rows:first-child h3
+{
+    padding-top:  15px;
+}
+
+.event-rows-alt
+{
+    background-color: #f7f7f7;
+}
+
+.sample-box a:link,
+.sample-box a:visited
+{
+    text-decoration: none;
+}
+
+.sample-box a:link .event-rows,
+.sample-box a:visited .event-rows
+{
+    transition: all 0.1s;
+    transition-timing-function: ease-in;
+}
+
+.sample-box a:hover .event-rows,
+.sample-box a:active .event-rows
+{
+    background-color: #720e3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sample-box a:link h3,
+.sample-box a:visited h3
+{
+    transition: all 0.1s;
+    transition-timing-function: ease-in;
+}
+
+.sample-box a:hover h3,
+.sample-box a:active h3
+{
+    color: #B33771;
+}
+
+.sample-box a:link p,
+.sample-box a:visited p
+{
+    transition: all 0.1s;
+    transition-timing-function: ease-in;
+}
+
+.sample-box a:hover p,
+.sample-box a:active p
+{
+    color: #fff;
+}
+
+.skewed2
+{
+    margin: 0;
+    margin-top: 2%;
+    background-color: #992f61;
+    height: 8vh;
+    width: 100%;
+    transform: skew(0deg, 4deg) translateY(-120px);
+    position: relative;
+    z-index: 3;
+/*    border-bottom: 3px solid #fff;*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.skewed3
+{
+    margin: 0;
+    margin-bottom: 5%;
+    background-color: #720e3d;
+    height: 11vh;
+    width: 100%;
+    transform: skew(0deg, 4deg) translateY(-120px);
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+/* -----------------------------------------------------*/
+                      /* FOOTER */
 /* -----------------------------------------------------*/
 
 
 footer
 {
     background-color: #333;
-    padding-top: 210px;
+    padding-top: 205px;
     padding-bottom: 50px;
     font-size: 80%;
     bottom: 0;
@@ -472,8 +932,103 @@ ion-icon[name=logo-instagram]
     color: #c32aa3;
 }
 
-footer p{
+footer p
+{
     color: #888;
     text-align: center;
     margin-top: 20px;
+}
+
+
+/* -----------------------------------------------------*/
+/* -----------------------------------------------------*/
+                    /* USERPAGE.html */
+/* -----------------------------------------------------*/
+/* -----------------------------------------------------*/
+
+
+.userpage-header
+{
+    background-color: #fff;
+}
+
+.userpage-header h1
+{
+    color: #B33771;
+    font-size: 300%;
+    font-weight: 300;
+    margin: 10% 0% 5%;
+}
+
+.userpage-header img
+{
+    height: 25vh;
+    width: auto;
+    border-radius: 200%;
+    filter: contrast(1.1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* -----------------------------------------------------*/
+                    /* SCROLL TO TOP */
+/* -----------------------------------------------------*/
+
+
+
+#top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    background-color: #5d5d5d;
+    color: #fff;
+    cursor: pointer;
+    padding: 13px 20px;
+    border-radius: 60px;
+    font-size: 110%;
+    font-weight: 700;
+    transition: background-color 0.2s;
+    opacity: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#top-btn:hover {
+    background-color: #3b3b3b;
+}
+
+
+/* -----------------------------------------------------*/
+                    /* ANIMATIONS */
+/* -----------------------------------------------------*/
+
+
+.js--button-box,
+.js--computericon,
+.js--aboutusicon,
+.js--events-box,
+.js--news-box
+{
+    opacity: 0;
+    animation-duration: 1.5s;
+}
+
+
+.js--button-box.animated,
+.js--computericon.animated,
+.js--aboutusicon.animated,
+.js--events-box.animated,
+.js--news-box.animated
+{
+    opacity: 1;
+}
+
+.login-box,
+.bg-modal
+{
+    animation-duration: 0.5s;
 }

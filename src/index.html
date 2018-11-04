@@ -23,19 +23,22 @@
 
     <body>
 
-        <header>
+
+
+
+        <header id="top">
 
             <nav>
 
-                    <div class="row" id="top1">
+                    <div class="row">
 
                         <a href="http://msrit.edu/"><img src="assets/resources/img/msrit_logo_edited.png" alt="Ramiah Logo"></a>
                         <h1>IEEE CIS</h1>
 
                         <ul class="main-nav">
-                            <li><a href="aboutus.html">home</a></li>
-                            <li><a href="#Aboutus">about</a></li>
-                            <li><a href="#">events</a></li>
+                            <li><a href="#top">home</a></li>
+                            <li><a href="#aboutus">about</a></li>
+                            <li><a href="#events">events</a></li>
                             <li><a href="pages/contact.html">contact</a></li>
                         </ul>
 
@@ -46,55 +49,165 @@
         </header>
 
 
-        <section class="frontpage">
 
+
+
+        <section class="frontpage">
             <div class="wrapper">
 
-
-                <div class="heading-box">
-                    <img src="assets/resources/img/computer-icon.svg" alt="computer icon">
-                    <h1>Welcome to IEEE CIS RIT</h1>
-                    <div class="row">
-                        </div>
+                <div class="heading-box js--heading-box">
+                    <img src="assets/resources/img/computer-icon.svg" class="js--computericon" alt="computer icon">
+                    <h1>Welcome To IEEE CIS<br> <span id="small-size">(Ramaiah Institute of Technology)</span></h1>
                 </div>
 
-                <div class="skewed">
-                    <div class="button-box">
+                <div class="skewed js--skewed">
+                    <div class="button-box js--button-box">
                         <a href="#" class="login-button">Log In</a>
                         <a href="#" class="signup-button">Sign Up</a>
                     </div>
                 </div>
 
-
             </div>
-
         </section>
+
+
+
+        <div class="bg-modal">
+            <div class="login-box">
+                <div class="login-box-header">
+                    <h1>LogIn</h1>
+                    <a href="#" class="login-box-close"><i class="icon ion-md-close"></i></a>
+                </div>
+                <div class="login-box-body">
+                    <form method="post" action="#" class="login-form">
+                        <input type="email" name="email" id="email" placeholder="E-mail" required>
+                        <input type="password" name="password" id="password" placeholder="Password" required>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="js--scroll-top">
+            <a href="#top" id="top-btn">&#x2191;</a>
+        </div>
 
 
 
         <section class="about">
-
             <div class="skewed1">
 
                 <div class= "aboutus-box">
-<!--
-                    <div class="row">
-                        <h1>About Us</h1>
-                    </div>
--->
-                    <div class="aboutus-textbox" id="Aboutus">
+                    <div class="aboutus-textbox" id="aboutus">
                         <h1>About Us</h1>
                         <h2>We're a professional society focussing on the theory, design, application, and development of computational paradigms.</h2>
                         <a href="aboutus.html" class="readmore-button"><span class="iconforward">Read More</span><span class="thickness"> &#x27E9;</span> </a>
                     </div>
-                    <img src="assets/resources/img/multiple-users-silhouette.svg" alt="about-us icon">
+                    <img src="assets/resources/img/multiple-users-silhouette.svg" alt="about-us icon" class="js--aboutusicon">
                 </div>
 
+            </div>
+        </section>
+
+
+
+        <section class="events" id="events">
+
+            <div class="row" >
+                <h1>Stay Up To Date</h1>
+            </div>
+
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <div class="events-box js--events-box">
+                        <div class="header-box">
+                            <div class="event-heading-box">
+                                <h2>Events</h2>
+                            </div>
+                            <div class="upcoming-box">
+                                <div class="col span-1-of-2">
+                                    <a href="#" class="upcoming">Upcoming</a>
+                                </div>
+                                <div class="col span-1-of-2">
+                                    <a href="#" class="past">Past</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="sample-box">
+                            <a href="#">
+                                <div class="event-rows">
+                                    <h3>29th Oct 2018</h3>
+                                    <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="event-rows">
+                                    <h3>9th Nov 2018</h3>
+                                    <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="event-rows">
+                                    <h3>15th Nov 2018</h3>
+                                    <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="event-rows">
+                                    <h3>23rd Nov 2018</h3>
+                                    <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col span-1-of-2">
+                    <div class="news-box js--news-box">
+
+                        <div class="header-box">
+                            <h2>News</h2>
+                        </div>
+                        <div class="sample-box">
+                            <a href="#">
+                                <div class="event-rows">
+                                    <h3>Lorem Ipsum Dolor Sit</h3>
+                                    <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="event-rows">
+                                    <h3>Lorem Ipsum Dolor Sit</h3>
+                                    <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="event-rows">
+                                    <h3>Lorem Ipsum Dolor Sit</h3>
+                                    <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="event-rows">
+                                    <h3>Lorem Ipsum Dolor Sit</h3>
+                                    <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
             </div>
 
         </section>
 
 
+        <div class="skewed2"></div>
+        <div class="skewed3"></div>
 
 
 
@@ -102,18 +215,18 @@
             <div class="row">
                 <div class="col span-1-of-2">
                     <ul class="footer-nav">
-                        <li><a href="#top1">Home</a></li>
-                        <li><a href="#Aboutus">About</a></li>
-                        <li><a href="#feedback1">Events</a></li>
-                        <li><a href="#contact1">Contact</a></li>
+                        <li><a href="#top">Home</a></li>
+                        <li><a href="#aboutus">About</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="pages/contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col span-1-of-2">
                     <ul class="social-links">
-                        <li><a href="https://www.facebook.com/ieeeritb/" class="facbook"><ion-icon name="logo-facebook" size="large"></ion-icon></a></li>
-                        <li><a href=""><ion-icon name="logo-linkedin" size="large"></ion-icon></a></li>
-                        <li><a href="https://twitter.com/ieeeritb"><ion-icon name="logo-twitter" size="large"></ion-icon></a></li>
-                        <li><a href="https://www.instagram.com/ieeeritb"><ion-icon name="logo-instagram" size="large"></ion-icon></a></li>
+                        <li><a href="https://www.facebook.com/ieeeritb/" target="_blank" class="facbook"><ion-icon name="logo-facebook" size="large"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-linkedin" size="large"></ion-icon></a></li>
+                        <li><a href="https://twitter.com/ieeeritb" target="_blank"><ion-icon name="logo-twitter" size="large"></ion-icon></a></li>
+                        <li><a href="https://www.instagram.com/ieeeritb" target="_blank"><ion-icon name="logo-instagram" size="large"></ion-icon></a></li>
                     </ul>
                 </div>
             </div>
@@ -127,47 +240,17 @@
 
 
 
-
-
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://unpkg.com/ionicons@4.3.0/dist/ionicons.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/respond.js@1/Gruntfile.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/selectivizr@1/selectivizr.min.js"></script>
 
-        <script src="vendors/js/jquery.waypoints.min.js"></script>
-        <script src="resources/js/script.js"></script>
+        <script src="assets/vendors/js/jquery.waypoints.min.js"></script>
+        <script src="assets/resources/js/script.js"></script>
 
         <script>
-$('a[href*="#"]')
-  .not('[href="#"]')
-  .not('[href="#0"]')
-  .click(function(event) {
-    if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-      &&
-      location.hostname == this.hostname
-    ) {
 
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        event.preventDefault();
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000, function() {
-          var $target = $(target);
-          $target.focus();
-          if ($target.is(":focus")) {
-            return false;
-          } else {
-            $target.attr('tabindex','-1');
-            $target.focus();
-          };
-        });
-      }
-    }
-  });
         </script>
 
 
